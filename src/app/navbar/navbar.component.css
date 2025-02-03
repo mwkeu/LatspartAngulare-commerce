@@ -1,0 +1,117 @@
+.brand {
+    font-size: 30px;
+      font-weight: bold;
+      color: #000;
+       text-decoration: none;
+      padding: 0px 30px;
+ }
+
+.link {
+      text-decoration: none;
+      font-size: 18px;
+     color: #000;
+     padding: 0px 10px;
+     font-weight: 400;
+}
+
+.link:hover {
+     color: blue;
+   }
+ 
+.cartCount {
+  font-size: 16px;
+ color: blue;
+  font-weight: bold;
+  }
+  
+@media screen and (max-width: 600px) {
+   .brand {
+    padding: 0px 10px;
+  }
+}
+/* search bar */
+.searchBar {
+    width: 250px;
+      margin-right: 20px;
+ }
+
+.searchBar .searchResultBox {
+      position: absolute;
+       z-index: 99;
+        background: #fff;
+    width: 100%;
+     margin-top: 5px;
+     padding: 5px 0;
+  border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    left: 0px;
+   }
+
+.searchBar .searchResultBox .serchResult {
+  padding: 5px 10px;
+}
+
+.searchBar .searchResultBox .serchResult a {
+    text-decoration: none;
+  color: #212529;
+   font-weight: 600;
+ }
+
+
+/* dark theme */
+.dark-theme .navbar {
+ background-color: #343a40 !important;
+    color: white !important;
+}
+
+ .dark-theme .nav-link {
+   color: #fff !important;
+ }
+
+.dark-theme .link {
+      color: #fff !important;
+ }
+
+.dark-theme .brand {
+    color: #fff !important;
+}
+
+.dark-theme  .searchBar .searchResultBox {
+    background: #343a40 !important;
+      border: 1px solid white !important;
+}
+
+.dark-theme .searchBar .searchResultBox a {
+  color: #fff !important;
+ }
+
+
+/* sınır */
+
+
+.dark-theme {
+  background-color: #343a40 !important;
+  color: #fff !important;
+}
+
+.dark-theme .navbar {
+  background-color: #343a40 !important;
+  color: white !important;
+}
+
+.dark-theme .nav-link,
+.dark-theme .link,
+.dark-theme .brand {
+  color: #fff !important;
+}
+
+/* Alternatif olarak navbar için doğrudan body'den türemiş stiller ekleyebilirsin */
+body.dark-theme .navbar {
+  background-color: #343a40 !important;
+  color: white !important;
+}
+
+
+
+
+

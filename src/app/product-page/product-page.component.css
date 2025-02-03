@@ -1,0 +1,84 @@
+.pageBox
+{
+    padding: 30px 30px;
+    margin: 30px 0px;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dark Theme Desteği */
+.dark-theme .pageBox {
+    background-color: #212529 !important;
+    color: white !important;
+}
+
+.pageContent
+{
+    padding: 10px 40px;
+    text-align: center;
+}
+
+.pageContent img 
+{
+    width: 100%;
+}
+
+.pageContent h4
+{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.pageContent img.lem {
+    box-shadow: none;
+    list-style: none;
+}
+
+
+.pageBox p
+{
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    display: flex;
+    padding-left: 95px;
+   
+    margin-top: 50px;
+
+}
+
+select.form-select-sm
+{
+    font-size: 17px;
+    padding: 10px;
+    font-weight: 400;
+    text-align: center;
+   margin-left: 95px;
+}
+
+.opp{
+    margin-bottom: 70px;
+    justify-content: center;
+    font-size: larger;
+}
+
+/* Filter Divine Style */
+.filter-section {
+    border-right: 3px solid pink;
+    box-shadow: 3px 3px 10px rgba(255, 105, 180, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.btn{
+    margin-left: 85px;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .pageBox
+    {
+        padding: 10px 10px;
+    }
+}

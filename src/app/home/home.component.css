@@ -1,0 +1,109 @@
+.categorisBox {
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 60px;
+    border-color: red;
+ border-style:groove;
+ 
+}
+
+/* Dark Theme Desteği */
+.dark-theme .categorisBox {
+    background-color: #212529 !important;
+    color: white !important;
+}
+
+.dark-theme .productBox {
+    background-color: #212529 !important;
+    color: white !important;
+}
+
+
+.categorisBox a {
+    text-decoration: none;
+    color: red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+
+}
+
+.categorisContent {
+    padding: 20px 20px;
+}
+
+.categorisContent img {
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid #cb0950d8;
+    width: 125px;
+    
+    
+}
+
+.categorisContent h4 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.productBox {
+    background-color: #fff;
+    padding: 30px 50px;
+    border-radius: 5px;
+}
+
+
+
+.productImg {
+    height: 200px;
+    width: 100%;
+}
+
+
+.productContent img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.productContent h4 {
+    font-size: 16px;
+    margin-top: 20px;
+
+}
+
+.productLink {
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.float-start{
+text-decoration: none;
+font-size: larger;
+color: red;
+font-family: 'Courier New', Courier, monospace;
+font-weight: 700;
+}
+
+.float-start:hover{
+
+font-weight: 100;
+color: red;
+
+}
+
+
+.float-end{
+font-size: larger;
+
+color: red;
+
+}

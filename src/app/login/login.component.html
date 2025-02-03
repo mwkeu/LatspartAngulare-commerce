@@ -1,0 +1,32 @@
+<div class="modal fade" [class.show]="true" [style.display]="'block'">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Login</h5>
+                <button type="button" class="btn-close" (click)="closeLoginModal()"></button>
+            </div>
+            <div class="modal-body">
+                <form #loginForm="ngForm" (ngSubmit)="login(email.value, password.value)" class="text-center">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control mx-auto" style="width: 80%;" id="email" name="email" #email="ngModel" required ngModel>
+                        <div class="text-danger" *ngIf="email.invalid && (email.dirty || email.touched)">
+                            Email gerekli
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control mx-auto" style="width: 80%;" id="password" name="password" #password="ngModel" required minlength="6" ngModel>
+                        <div class="text-danger" *ngIf="password.invalid && (password.dirty || password.touched)">
+                            Şifre en az 6 karakter olmalı
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-warning d-block mx-auto" [disabled]="loginForm.invalid">Login</button>
+                    <p class="mt-2 mb-2">Don't have an account? 
+                        <a style="cursor: pointer; color: red;" (click)="openRegister()">Register Now</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

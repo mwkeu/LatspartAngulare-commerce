@@ -1,0 +1,35 @@
+.cartBox
+{
+    background-color: #fff;
+    padding: 50px 50px;   
+}
+
+
+/* Dark Theme Desteği */
+.dark-theme .cartBox {
+    background-color: #212529 !important;
+    color: white !important;
+}
+
+.dark-theme .priceBox {
+    background-color: #343a40 !important;
+    color: white !important;
+}
+
+.cartBox img 
+{
+    width: 100%;
+}
+
+.priceBox
+{
+    background-color: #fff;
+    padding: 30px 30px;
+}
+
+@media screen and (max-width:600px) {
+    .cartBox img 
+{
+    width: 50%;
+}
+}

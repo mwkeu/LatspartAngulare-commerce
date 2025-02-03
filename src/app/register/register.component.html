@@ -1,0 +1,36 @@
+<div class="modal fade" [class.show]="true" [style.display]="'block'">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-center w-100">
+                <h5 class="modal-title w-100">Register</h5>
+                <button type="button" class="btn-close" (click)="closeRegisterModal()"></button>
+            </div>
+            <div class="modal-body">
+                <form #registerForm="ngForm" (ngSubmit)="register(email.value, password.value)" class="text-center">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control mx-auto" style="width: 80%;" id="name" name="name" #name="ngModel" required minlength="4" ngModel>
+                        <div class="text-danger" *ngIf="name.invalid && (name.dirty || name.touched)">
+                            Name en az 4 karakter olmalı
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control mx-auto" style="width: 80%;" id="email" name="email" #email="ngModel" required ngModel>
+                        <div class="text-danger" *ngIf="email.invalid && (email.dirty || email.touched)">
+                            Email gerekli
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control mx-auto" style="width: 80%;" id="password" name="password" #password="ngModel" required minlength="6" ngModel>
+                        <div class="text-danger" *ngIf="password.invalid && (password.dirty || password.touched)">
+                            Şifre en az 6 karakter olmalı
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-warning d-block mx-auto" [disabled]="registerForm.invalid">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

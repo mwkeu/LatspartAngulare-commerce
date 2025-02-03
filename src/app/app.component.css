@@ -1,0 +1,83 @@
+* {
+  text-size-adjust: none;
+  text-align: match-parent;
+  text-align: -webkit-match-parent;
+}
+
+html, body {
+  background-color: #fff !important;
+  transition: all 0.20s ease;
+}
+
+.dark-theme {
+  background-color: #343a40 !important; /*Arka planı düzeltiyoruz*/
+  color: #fff !important; /*Metin rengini düzeltiyoruz*/
+}
+
+.dark-theme .navbar {
+  background-color: #343a40 !important;
+  color: white !important;
+}
+
+.dark-theme .nav-link {
+  color: #fff !important;
+}
+
+.dark-theme .link {
+  color: #fff !important;
+}
+
+.dark-theme .serchResult a {
+  color: #fff !important;
+}
+
+.dark-theme .brand {
+  color: #fff !important;
+}
+
+.dark-theme .searchBar .searchResultBox {
+  background: #343a40 !important;
+  border: 1px solid white !important;
+}
+
+.dark-theme .searchBar .searchResultBox a {
+  color: #fff !important;
+}
+
+/* sınır */
+
+.dark-theme {
+  background-color: #343a40 !important;
+  color: #fff !important;
+}
+
+.dark-theme .navbar {
+  background-color: #343a40 !important;
+  color: white !important;
+}
+
+.dark-theme .nav-link,
+.dark-theme .link,
+.dark-theme .brand {
+  color: #fff !important;
+}
+
+/* Alternatif olarak navbar için doğrudan body'den türemiş stiller ekleyebilirsin */
+body.dark-theme .navbar {
+  background-color: #343a40 !important;
+  color: white !important;
+}
+
+/* Dark Mode için eklenen yeni stiller */
+.dark-theme * {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+.dark-theme .pageBox,
+.dark-theme .categorisBox,
+.dark-theme .cartBox,
+.dark-theme .productBox {
+  background-color: #212529 !important;
+  color: white !important;
+}

@@ -1,0 +1,35 @@
+<nav class="container-fluid bg-white py-2 shadow-sm">
+   <div class="row">
+        <div class="col-lg-4 col-12">
+             <a class="brand" routerLink="/" title="Anasayfa">cartshop.io</a>
+        </div>
+
+<div class="col-lg-8 col-12 mt-3 d-flex justify-content-end align-items-center">
+
+   <!-- search bar -->
+       <div class="input-group searchBar">
+        <input type="text" class="form-control" placeholder="Search product here ..." [(ngModel)]="searchTerm"
+               (input)="searchProduct()" title="Ürün arama yapınız">
+          <button class="btn btn-warning" type="button" title="ara"><i class="bi bi-search"></i></button>
+               <div *ngIf="filteredProducts.length > 0 " class="searchResultBox">
+                <div *ngFor="let item of filteredProducts" class="serchResult">
+                     <a [routerLink]="['/product-detail',item.pdCategory,item.pdId]">{{item.pdName}}</a>
+                </div>
+          </div>
+       </div>
+           <!-- search bar -->
+
+ <button class="btn ms-2  " (click)="toggleTheme()" title="temayı değiştirme">
+        <i *ngIf="!isDarkTheme" class="bi bi-moon-fill" ></i>  
+          <i *ngIf="isDarkTheme"  class="bi bi-sun-fill" ></i> 
+           <span class="visually-hidden" *ngIf="!isDarkTheme">Enable Dark Theme</span>
+         <span class="visually-hidden" *ngIf="isDarkTheme">Enable Light Theme</span>
+    </button>
+
+          <a routerLink="/" class="link ms-3" title="Ana Sayfaya git"><i class="bi bi-house"></i> Home</a>
+          <a routerLink="/cart" class="link ms-3" title="Sepete git"  ><i class="bi bi-cart3"></i> Cart <span
+            class="cartCount">{{cartCount}}</span></a>
+
+</div>
+</div>
+</nav>
